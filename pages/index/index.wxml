@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view wx:for="{{attrList}}" wx:for-index="idx" wx:key="userInfoListId" class="outStyle">
+  <view class='outStyleText textStyle buttonPaddingStyle'>{{item.attrName}}</view>
+  <view class='typeStyle textStyle'>
+    <view wx:for="{{item.attr}}" data-item='{{item.attr[index]}}' data-index='{{index}}' data-idx='{{idx}}' wx:key="userInfoListId" bindtap="onChangeShowState" wx:for-item="items">
+      <view class="{{items.enable == true ?(items.select==true?'orange':'back') : 'white'}} textStyle buttonPaddingStyle">
+        {{items.attributeValue}}
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class='textStyle buttonPaddingStyle shuru'>
+  <view>当前点击的信息:</view>
+  <view>{{infoText}}</view>
+</view>

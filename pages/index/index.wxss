@@ -1,0 +1,50 @@
+/**index.wxss**/
+
+.orange {
+  border-radius: 10px;
+  background-color: #f19e39;
+  margin-right: 10px;
+  color: #fff;
+}
+
+.back {
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  margin-right: 10px;
+  color: #000;
+}
+
+.white {
+  border-radius: 10px;
+  background-color: #fff;
+  margin-right: 10px;
+  color: #999;
+}
+
+.typeStyle {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+
+.outStyle {
+  display: flex;
+  flex-direction: column;
+}
+
+.outStyleText {
+  display: flex;
+  flex-direction: column;
+  color: #999;
+}
+
+.shuru {
+  position: fixed;
+  height: 100rpx;
+  width: 100%;
+  text-align: left;
+  background-color: #efefef;
+  border-top: 1px solid #ccc;
+  bottom: 0rpx;
+  _position: absolute;
+}
